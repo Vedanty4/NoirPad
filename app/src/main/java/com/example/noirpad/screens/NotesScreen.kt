@@ -7,11 +7,15 @@ import androidx.compose.ui.Modifier
 import com.example.noirpad.viewmodel.NoteViewModel
 
 @Composable
-fun NotesScreen(viewModel: NoteViewModel,modifier: Modifier) {
+fun NotesScreen(
+    viewModel: NoteViewModel,
+    modifier: Modifier = Modifier
+) {
     val notes by viewModel.allNotes.observeAsState(emptyList())
 
     DisplayNotesList(
         notes = notes,
-        onNoteClick = { note -> viewModel.deleteNote(note)} // 👈 delete on single tap
+        onNoteClick = { note -> viewModel.deleteNote(note) }, // 👈 delete on single tap
+        modifier = modifier // 👈 pass modifier here
     )
 }

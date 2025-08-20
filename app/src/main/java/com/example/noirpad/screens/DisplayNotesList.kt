@@ -13,7 +13,7 @@ import com.example.noirpad.roomdb.Note
 
 
 @Composable
-fun DisplayNotesList(notes: List<Note>,    onNoteClick: (Note) -> Unit,
+fun DisplayNotesList(notes: List<Note>,  modifier: Modifier = Modifier,  onNoteClick: (Note) -> Unit,
 ) {
     LazyVerticalStaggeredGrid(
         columns = StaggeredGridCells.Fixed(2),

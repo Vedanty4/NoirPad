@@ -24,15 +24,15 @@ import java.nio.file.WatchEvent
 fun ColorPicker(selectedColor: Color,
                   onColorSelected:(Color) -> Unit) {
     var colorlist = listOf(
-        Color("#f59597".toColorInt()),
-        Color("#f38588".toColorInt()),
-        Color("#f8db83".toColorInt()),
-        Color("#c09cc8".toColorInt()),
-        Color("#9999cd".toColorInt()),
-        Color("#9fd6be".toColorInt()),
-        Color("#dfe581".toColorInt()),
-        Color("#e2eb92".toColorInt()),
-        Color("#faa385".toColorInt()),
+        Color("#556B2F".toColorInt()), // dark olive green
+        Color("#6B8E23".toColorInt()), // muted green
+        Color("#708090".toColorInt()), // slate gray
+        Color("#4682B4".toColorInt()), // steel blue
+        Color("#8B7765".toColorInt()), // taupe
+        Color("#BDB76B".toColorInt()), // dark khaki
+        Color("#4B5320".toColorInt()), // army green
+        Color("#2F4F4F".toColorInt()), // dark slate gray
+        Color("#D2B48C".toColorInt())  // tan
     )
     LazyRow(horizontalArrangement = Arrangement.SpaceEvenly,
         modifier = Modifier.fillMaxWidth().padding(8.dp))  {
