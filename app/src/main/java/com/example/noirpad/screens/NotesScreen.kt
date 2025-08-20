@@ -3,8 +3,8 @@ package com.example.noirpad.screens
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
+import androidx.compose.ui.Modifier
 import com.example.noirpad.viewmodel.NoteViewModel
-import java.lang.reflect.Modifier
 
 @Composable
 fun NotesScreen(viewModel: NoteViewModel,modifier: Modifier) {
